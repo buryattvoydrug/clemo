@@ -1,0 +1,63 @@
+.about-us{
+	display: flex;
+	flex-wrap:wrap;
+	margin-top: 50px;
+	.about-us-block{
+		width: 50%;
+		.about-img{
+			max-width:560px;
+			height: 560px;
+			overflow: hidden;
+			.about__img{
+				height: 100%;
+			}
+		}
+		.about__slogan{
+			padding: 51px 0 87px 72px;
+			.title__line{
+				margin-bottom: 31px;
+			}
+			.slogan{
+				display: block;
+				max-width: 365px;
+			}
+		}
+		.title__line{
+			margin-bottom: 44px;
+		}
+		.about__text{
+			margin-bottom: 31px;
+		}
+		.button{
+			margin-top: 45px;
+		}
+	}
+	.about-us-block:nth-child(2){
+		padding: 0 0 0 84px;
+	}
+}
+@media(max-width:1200px){
+	.about-us{
+		.about-us-block{
+			width: 80%;
+			margin: 0 auto;
+			padding: 0 !important;
+		}
+	}
+}
+@media(max-width:767px){
+	.about-us{
+		.about-us-block{
+			width: 100%;
+			margin: 0 auto;
+			padding: 0 30px !important;
+			.about__slogan{
+				padding-left: 0;
+			}
+			.about-img{
+				width: 100% !important;
+				height: 300px;
+			}
+		}
+	}	
+}
